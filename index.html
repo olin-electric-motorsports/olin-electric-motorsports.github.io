@@ -54,7 +54,7 @@
                         <div class="text">
                             <h3>Olin Electric Motorsports</h3>
                             <h6>5 YEARS, 65 UNDERGRADUATE ENGINEERS, 125,000+ HOURS OF LEARNING, 5 VEHICLES, 1 TEAM. </h6>
-                            <a class="button white" href="#about">Learn More</a>
+                            <a class="button white" href="#about" onclick="smoothScroll(document.getElementById('about'))">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -67,61 +67,67 @@
         </header>
 
         <section class="project" id="about">
-            <div class="text">
-                <h2>About The Team</h2>
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
+            <!-- <div class="about">
+                <div class="about__background"></div>
+                <div class="about__overlay"></div>
+                <div class="about__content"> -->
+                    <div class="text">
+                        <h2>About The Team</h2>
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
 
-                    <!-- Full-width images with number -->
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 6</div>
-                        <img src="img/Fall_2019.jpg" alt="img_1" style="width:100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 6</div>
-                        <img src="img/img_2.jpeg" alt="img_2" style="width:100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 6</div>
-                        <img src="img/img_3.jpeg" alt="img_3" style="width:100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 6</div>
-                        <img src="img/img_4.jpeg" alt="img_4" style="width:100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 6</div>
-                        <img src="img/img_5.jpeg" alt="img_5" style="width:100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">6 / 6</div>
-                        <img src="img/img_6.jpeg" alt="img_6" style="width:100%; height: 100%; object-fit: cover;">
-                    </div>
-                
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
+                            <!-- Full-width images with number -->
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="img/Fall_2019.jpg" alt="img_1" style="width:100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="img/img_2.jpeg" alt="img_2" style="width:100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="img/img_3.jpeg" alt="img_3" style="width:100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="img/img_4.jpeg" alt="img_4" style="width:100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="img/img_5.jpeg" alt="img_5" style="width:100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="img/img_6.jpeg" alt="img_6" style="width:100%; height: 100%; object-fit: cover;">
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
 
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                </div>
-            </div>
-            <div class="content">
-                <h4>Who we are</h4>
-                <p>Olin Electric Motorsports is an undergraduate organization at Olin College focused on educating engineers through the development and manufacture of electric vehicles. We believe that electric vehicles provide an excellent platform for students to pursue mechanical, electrical, computer, and systems engineering in depth. By working together to achieve this in time for competition, members also develop the communication and leadership skills necessary for success as an engineer.</p>
-            </div>
-            <div class="content">
-                <h4>Our mission</h4>
-                <p>Our mission is to build a culture of continuous learning in a welcoming environment for members to deepen engineering knowledge and develop interpersonal skills by designing and building a Formula SAE vehicle to ultimately develop a passion for the competition and the team.</p>
-            </div>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>Who we are</h4>
+                        <p>Olin Electric Motorsports is an undergraduate organization at Olin College focused on educating engineers through the development and manufacture of electric vehicles. We believe that electric vehicles provide an excellent platform for students to pursue mechanical, electrical, computer, and systems engineering in depth. By working together to achieve this in time for competition, members also develop the communication and leadership skills necessary for success as an engineer.</p>
+                    </div>
+                    <div class="content">
+                        <h4>Our mission</h4>
+                        <p>Our mission is to build a culture of continuous learning in a welcoming environment for members to deepen engineering knowledge and develop interpersonal skills by designing and building a Formula SAE vehicle to ultimately develop a passion for the competition and the team.</p>
+                    </div>
+                <!-- </div>
+            </div> -->
         </section>
         <section class="project">
             <div class="text">
@@ -205,212 +211,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="services">
-            <div class="text">
-                <h2>Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="services_area">
-                            <div id="accordion">
-                                <h3><i class="material-icons first">trending_up</i>Statistics<i class="material-icons last">arrow_drop_down</i></h3>
-                                <div class="slide_up">
-                                    <div class="accordion_img">
-                                        <img src="img/accordion1.jpg" alt="">
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
-                                </div>
-                                <h3><i class="material-icons first">mail</i>inbox<i class="material-icons last">arrow_drop_down</i></h3>
-                                <div class="slide_up">
-                                    <div class="accordion_img">
-                                        <img src="img/accordion1.jpg" alt="">
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
-                                </div>
-                                <h3><i class="material-icons first">group</i>team<i class="material-icons last">arrow_drop_down</i></h3>
-                                <div class="slide_up">
-                                    <div class="accordion_img">
-                                        <img src="img/accordion1.jpg" alt="">
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
-                                </div>
-                                <h3><i class="material-icons first">settings</i>settings<i class="material-icons last">arrow_drop_down</i></h3>
-                                <div class="slide_up">
-                                    <div class="accordion_img">
-                                        <img src="img/accordion1.jpg" alt="">
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
-                                </div>
-                                <h3><i class="material-icons first">rss_feed</i>feed<i class="material-icons last">arrow_drop_down</i></h3>
-                                <div class="slide_up">
-                                    <div class="accordion_img">
-                                        <img src="img/accordion1.jpg" alt="">
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- <section class="customer_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="customer_say">
-                            <h3>What our customers <br> have to say about us.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                            <a class="button" href="#">Get started</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="vertical_main" id="vertical_main">
-                            <div class="verticalCarousel">
-                                <a href="#" class="vc_goDown"><i class="fa fa-fw fa-angle-down"></i></a>
-                                <a href="#" class="vc_goUp"><i class="fa fa-fw fa-angle-up"></i></a>
-                                <div class="vc_container" style="height: 285px;">
-                                    <ul class="verticalCarouselGroup vc_list" style="transform: translateY(-135px);">
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images.jpg" alt="">
-                                                <h4>John Doe</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="vertical_text">
-                                                <img src="img/vertical_text_images1.jpg" alt="">
-                                                <h4>Khalessi</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </section> -->
         <section class="team" id="team">
             <div class="text">
@@ -509,8 +310,8 @@
 
         <section class="project">
             <div class="text">
-                <h2>Sponsorhip</h2>
-                <img src="img/img_7.jpeg" alt="img_3" style="width:100%; height: 100%; object-fit: cover; margin-top: 15px;">
+                <h2>Sponsorship</h2>
+                <img src="img/img_8.jpeg" alt="img_3" style="width:100%; height: 100%; object-fit: cover; margin-top: 15px;">
             </div>
             <div class="content">
                 <h4>Get involved</h4>
@@ -570,7 +371,7 @@
                 <div class="row">
                     <div class="col md-12">
                         <div class="form_area">
-                            <form action="#" method="post">
+                            <form action="https://formspree.io/mqkerqqk" method="POST">
                                 <div class="small_input_area">
                                     <input type="text" name="first_name" placeholder="First Name">
                                     <input type="text" name="last_name" placeholder="Last Name">
@@ -579,7 +380,7 @@
                                     <input type="email" name="email" placeholder="Email">
                                 </div>
                                 <textarea name="message" placeholder="Message"></textarea>
-                                <input type="submit" value="SEND">
+                                <input type="submit" value="send">
                             </form>
                         </div>
                     </div>
@@ -632,6 +433,7 @@
     <script src="js/jQuery.verticalCarousel.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/active.js"></script>
+    <!-- Image Carosel Script -->
     <script>
         // var slideIndex = 1;
         // showSlides(slideIndex);
@@ -658,6 +460,31 @@
             }
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <!-- Smooth Scroll Script -->
+    <script>
+        window.smoothScroll = function(target) {
+            var scrollContainer = target;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (target == scrollContainer) break;
+                targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+
+            scroll = function(c, a, b, i) {
+                i++; if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function(){ scroll(c, a, b, i); }, 20);
+            }
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
         }
     </script>
 </body>

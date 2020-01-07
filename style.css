@@ -3,8 +3,12 @@ body {
 }
 
 header.header {
-    /* background-image: url("img/header-bg.jpg"); */
     background-color: #000;
+    background-image: url("img/img_7.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(5px);
     padding: 30px 0 175px;
 }
 
@@ -129,6 +133,41 @@ section.project {
     background-color: black;
 }
 
+.about {
+    position: relative;
+}
+
+.about__background,
+.about__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about__background {
+    background: url("img/img_7.jpeg") center center no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+}
+
+.about__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.about__content {
+    padding: 50px 0px 50px 0px;
+    max-width: 1055px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 3;
+}
+
 section.project .steps-list {
     margin: 0;
     font-size: 15px;
@@ -152,6 +191,7 @@ section>.text {
     margin: 100px auto;
     max-width: 555px;
     text-align: center;
+    opacity: 1;
 }
 
 section>.content {
@@ -159,6 +199,7 @@ section>.content {
     margin: 100px auto;
     max-width: 1055px;
     text-align: start;
+    opacity: 1;
 }
 
 section.project p.button {
