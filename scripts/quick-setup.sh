@@ -15,8 +15,7 @@ confirm_and_run() {
   read -p "${white}Run ${green}${cmd}${white}? [y/n] " -n 1 -r resp
   printf "\n"
 
-  case $resp in
-    [yY][eE][sS]|[yY])
+  case $resp in [yY][eE][sS]|[yY])
       printf "\n${green}Running: ${blue}${bold}$1${cl}\n"
       eval $1
       ;;
@@ -73,7 +72,7 @@ cat << EOF
 Your environment should now be setup. Here are a few things you may want to do now:
 
   ******************************************************************
-  *** https://github.com/OlinElectricMotorSports/AdvancedResearch ***
+  *** https://github.com/olin-electric-motormports/AdvancedResearch ***
   ******************************************************************
 
 * ${bold}Fork the Advanced Research GitHub repository ^^^${cl} (create your own copy of it on GitHub)
