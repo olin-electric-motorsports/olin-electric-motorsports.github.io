@@ -72,7 +72,7 @@ cat << EOF
 Your environment should now be setup. Here are a few things you may want to do now:
 
   ******************************************************************
-  *** https://github.com/olin-electric-motormports/AdvancedResearch ***
+  *** https://github.com/olin-electric-motorsports/AdvancedResearch ***
   ******************************************************************
 
 * ${bold}Fork the Advanced Research GitHub repository ^^^${cl} (create your own copy of it on GitHub)
