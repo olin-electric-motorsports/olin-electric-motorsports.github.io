@@ -58,7 +58,7 @@ main () {
   #############
   printf "\n"
   printf "\n${green}${bold}Installing buildchain...${cl}\n"
-  confirm_and_run "sudo apt-get install build-essential manpages-dev gcc avr-gcc avrdude"
+  confirm_and_run "sudo apt-get install build-essential manpages-dev gcc gcc-avr avrdude"
 
   ########
   # ZOOM #
