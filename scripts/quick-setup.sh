@@ -41,10 +41,7 @@ main () {
   printf "${green}${bold}Installing Git...${cl}\n"
   confirm_and_run "sudo apt update && sudo apt install git"
   eval "git --version"
-  confirm_and_run "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0 && \
-    sudo apt-add-repository https://cli.github.com/packages \
-    sudo apt update \
-    sudo apt install gh"
+  confirm_and_run "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0 && sudo apt-add-repository https://cli.github.com/packages && sudo apt update && sudo apt install gh"
 
   #########
   # KICAD #
